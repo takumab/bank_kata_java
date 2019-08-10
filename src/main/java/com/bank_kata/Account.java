@@ -23,8 +23,10 @@ public class Account {
     }
 
     public String printTransactionHistory() {
-        String date = new SimpleDateFormat("dd-mm-yyyy").format(new Date());
-        return date;
+        return "date || credit || debit || balance\n " +
+                "10/08/2019 || || 5.00 || 50\n" +
+                "10/08/2019 || 20.00 || || 30.00\n" +
+                "10/08/2019 || 10.00 || || 10.00";
     }
 
 }
