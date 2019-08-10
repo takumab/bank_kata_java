@@ -1,5 +1,8 @@
 package com.bank_kata;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Account {
     private int balance;
 
@@ -17,6 +20,11 @@ public class Account {
 
     public int getBalance() {
         return balance;
+    }
+
+    public String printTransactionHistory() {
+        String date = new SimpleDateFormat("dd-mm-yyyy").format(new Date());
+        return date;
     }
 
 }
