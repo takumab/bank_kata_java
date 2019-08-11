@@ -43,14 +43,4 @@ public class AccountShould {
         assertEquals(15, account.getBalance());
     }
 
-    @Test
-    void print_a_statement_of_all_transactions() {
-        Account account = new Account();
-        account.deposit(30);
-        account.deposit(20);
-        assertEquals("date || credit || debit || balance\n " +
-                "10/08/2019 || || 5.00 || 50\n" +
-                "10/08/2019 || 20.00 || || 30.00\n" +
-                "10/08/2019 || 10.00 || || 10.00", account.printTransactionHistory());
-    }
 }
